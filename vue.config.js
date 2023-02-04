@@ -1,4 +1,4 @@
 const { defineConfig } = require('@vue/cli-service')
-module.exports = {
-  publicPath: '/vue-portfolio'
-}
+module.exports = defineConfig({
+  publicPath: '/'
+})
