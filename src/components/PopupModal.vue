@@ -1,8 +1,8 @@
 <template>
-    <div class="popup">
-        <div class="popup-inner">
+    <div class="popup" @click.self="close">
+        <div class="popup-inner" @click.stop>
             <div class="email-form">
-                <form action="https://formsubmit.co/qlonruss30@gmail.com" method="POST">
+                <form action="https://formsubmit.co/33c90668e117aa2e91dc07c0c564a400" method="POST">
                     <h3>Send a message</h3>
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="New email from your portfolio!">
