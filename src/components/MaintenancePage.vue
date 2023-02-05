@@ -8,31 +8,43 @@
             <p>This website is currently undergoing scheduled maintenance. We should be back shortly.</p>
         </div>
         <div class="maintenance-contact-container">
-            <p>Connect with me</p>
+            <p>While we're away, connect with us</p>
             <a href="https://github.com/lonruss30" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/lonrusselquinto/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <p>Or submit an email</p>
-            <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <button @click="callModal"><i class="fa-solid fa-envelope"></i></button>
         </div>
-        <div class="maintenance-email-modal">
-            <div class="email-form">
-                <form action="https://formsubmit.co/qlonruss30@gmail.com" method="POST">
-                    <h3>Send a message</h3>
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="New email from your portfolio!">
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name="name" placeholder="What's your name?" required>
-                    <textarea name="message" placeholder="Write your thoughts here" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-        </div>
-        
+        <PopupModal
+            v-if="isShowModal" 
+            @close="close"
+        />  
     </div>
 </template>
 <script>
+// import { ref } from 'vue';
+import PopupModal from './PopupModal.vue';
 export default {
-    
+        data(){
+            return{
+                isShowModal: false,
+                
+            }
+            
+        },
+        components:{
+            PopupModal
+        },
+        methods: {
+            close(){
+                this.isShowModal = false;
+            },
+            callModal(){
+                this.isShowModal = true;
+            }
+        },
+        beforeMount(){
+            setTimeout(()=> this.isShowModal = true, 4000);
+        }
 }
 </script>
 <style scoped>
@@ -45,7 +57,7 @@ export default {
         min-height: 100vh;
     }
     .maintenance-main-container{
-        padding-top: 17%;
+        padding-top: 15%;
     }
     .fa-person-digging{
         height: 100px;
@@ -53,20 +65,15 @@ export default {
     .maintenance-contact-container{
         margin: 50px;
     }
-    .maintenance-contact-container a{
+    .maintenance-contact-container a, button{
         color: inherit;
+        border: none;
+        background: none;
+        cursor: pointer;
     }
     .maintenance-contact-container .fa-github,.fa-linkedin,.fa-envelope{
         height: 25px;
         margin: 5px;
     }
-    .maintenance-email-modal{
-        height: 600px;
-        width: 500px;
-        border-radius: 15px;
-        background-color: #395144;
-    }
-    .maintenance-email-modal h3{
-        color: #F0EBCE;
-    }
+    
 </style>

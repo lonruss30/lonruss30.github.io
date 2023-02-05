@@ -14,21 +14,20 @@
 </template>
 
 <script>
+  // import NavBar from './components/NavBar.vue';
+  // import MainCard from './components/MainCard.vue'
+  // import ProjectsCard from './components/ProjectsCard.vue';
+  import MaintenancePage from './components/MaintenancePage.vue';
 
-// import NavBar from './components/NavBar.vue';
-// import MainCard from './components/MainCard.vue'
-// import ProjectsCard from './components/ProjectsCard.vue';
-import MaintenancePage from './components/MaintenancePage.vue';
-
-export default {
-  name: 'App',
-  components: {
-    // NavBar,
-    // MainCard,
-    // ProjectsCard,
-    MaintenancePage
+  export default {
+    name: 'App',
+    components: {
+      // NavBar,
+      // MainCard,
+      // ProjectsCard,
+      MaintenancePage
+    }
   }
-}
 </script>
 
 <style>
