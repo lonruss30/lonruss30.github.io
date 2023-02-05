@@ -21,13 +21,12 @@
     </div>
 </template>
 <script>
-// import { ref } from 'vue';
+
 import PopupModal from './PopupModal.vue';
 export default {
         data(){
             return{
-                isShowModal: false,
-                
+                isShowModal: false
             }
             
         },
