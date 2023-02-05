@@ -1,32 +1,33 @@
 <template>
   <header>
-    <NavBar/>
+    <!-- <NavBar/> -->
   </header>
   
-  <div class="main-wrapper">
+  <!-- <div class="main-wrapper">
     <div class="main-container">
       <MainCard/>
       <ProjectsCard/>
     </div>
-  </div>
+  </div> -->
   
+  <MaintenancePage/>
 </template>
 
 <script>
+  // import NavBar from './components/NavBar.vue';
+  // import MainCard from './components/MainCard.vue'
+  // import ProjectsCard from './components/ProjectsCard.vue';
+  import MaintenancePage from './components/MaintenancePage.vue';
 
-import NavBar from './components/NavBar.vue';
-import MainCard from './components/MainCard.vue'
-import ProjectsCard from './components/ProjectsCard.vue';
-
-
-export default {
-  name: 'App',
-  components: {
-    NavBar,
-    MainCard,
-    ProjectsCard
+  export default {
+    name: 'App',
+    components: {
+      // NavBar,
+      // MainCard,
+      // ProjectsCard,
+      MaintenancePage
+    }
   }
-}
 </script>
 
 <style>
