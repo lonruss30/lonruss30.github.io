@@ -1,0 +1,68 @@
+{
+    "InfoArray" : [
+        {
+            "Age" : 22,
+            "Job" : "Junior .NET Developer/Web Developer",
+            "ContactNumber" : "09287347770",
+            "Email" : "qlonruss30@gmail.com",
+            "Address" : "560 Corcuera St. Tondo, Manila"
+        }
+    ],
+    "ExperienceArray" : [
+        {
+            "Company" : "SD Solutions IT Outsourcing Inc.",
+            "Role" : "Junior .NET Developer",
+            "Date" : "Aug. 2022 - Present"
+        }
+    ],
+    "EducationArray" : [
+        {
+            "School" : "Technological University of the Philippines - Mania",
+            "EducationalLevel" : "College",
+            "Course" : "Bachelor of Technical-Vocational Teacher Education major in Computer Programming",
+            "Date" : "2018-2022"
+        },
+        {
+            "School" : "Metropolitan Medical Center College of Arts Science & Technology",
+            "EducationalLevel" : "Senior High school",
+            "Course" : "ICT - Computer  Programming",
+            "Date" : "2016-2018"
+        },
+        {
+            "School" : "Technological University of the Philippines - Mania",
+            "EducationalLevel" : "College",
+            "Course" : "Bachelor of Technical-Vocational Teacher Education major in Computer Programming",
+            "Date" : "2018-2022"
+        }
+    ],
+    "Technologies" : [
+        {
+            "Title" : "HTML",
+            "Icon" : "fa-brands fa-html5 icon-class"
+        },
+        {
+            "Title" : "CSS",
+            "Icon" : "fa-brands fa-css3-alt icon-class"
+        },
+        {
+            "Title" : "JavaScript",
+            "Icon" : "fa-brands fa-square-js icon-class"
+        },
+        {
+            "Title" : "Vue.js",
+            "Icon" : "fa-brands fa-vuejs icon-class"
+        },
+        {
+            "Title" : "Angular",
+            "Icon" : "fa-brands fa-angular icon-class"
+        },
+        {
+            "Title" : "Bootstrap",
+            "Icon" : "fab fa-bootstrap icon-class"
+        },
+        {
+            "Title" : "Git",
+            "Icon" : "fab fa-git-alt icon-class"
+        }
+    ]
+}

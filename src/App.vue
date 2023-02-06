@@ -3,57 +3,58 @@
     <!-- <NavBar/> -->
   </header>
   
-  <!-- <div class="main-wrapper">
+  <div class="main-wrapper">
     <div class="main-container">
       <MainCard/>
-      <ProjectsCard/>
+      <!-- <ProjectsCard/> -->
     </div>
-  </div> -->
+  </div>
   
-  <MaintenancePage/>
+  <!-- <MaintenancePage/> -->
 </template>
 
 <script>
   // import NavBar from './components/NavBar.vue';
-  // import MainCard from './components/MainCard.vue'
+  import MainCard from './components/MainCard.vue'
   // import ProjectsCard from './components/ProjectsCard.vue';
-  import MaintenancePage from './components/MaintenancePage.vue';
+  // import MaintenancePage from './components/MaintenancePage.vue';
 
   export default {
     name: 'App',
     components: {
       // NavBar,
-      // MainCard,
+      MainCard,
       // ProjectsCard,
-      MaintenancePage
+      // MaintenancePage
     }
   }
 </script>
 
 <style>
 body{
-  margin: 0;
-  padding: 0;
+  height: inherit;
 }
 
-.main-wrapper{
-  max-width: 100%;
-  flex: 1 1 auto;
-}
+  #app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-.main-container{
-  width: 100%;
-  padding-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .main-wrapper{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
 
-#app {
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #395144;
-  background-color: #F0EBCE;
+      .main-container{
+        width: 70%;
+        min-height: 100vh;
+      }
+
+@media (max-width: 950px){
+  .main-container{
+    width: 80%;
+  }
+        
 }
 </style>
