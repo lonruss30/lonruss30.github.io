@@ -1,31 +1,34 @@
 <template>
+  <!-- Portfolio Page Start -->
   <header>
-    <!-- <NavBar/> -->
+    <NavBar/>
   </header>
   
-  <!-- <div class="main-wrapper">
+  <div class="main-wrapper">
     <div class="main-container">
       <MainCard/>
       <ProjectsCard/>
     </div>
-  </div> -->
+  </div>
+  <!-- Portfolio Page End -->
   
-  <MaintenancePage/>
+  <!-- Maintenance Page uncomment when needed -->
+  <!-- <MaintenancePage/> -->
 </template>
 
 <script>
-  // import NavBar from './components/NavBar.vue';
-  // import MainCard from './components/MainCard.vue'
-  // import ProjectsCard from './components/ProjectsCard.vue';
-  import MaintenancePage from './components/MaintenancePage.vue';
+  import NavBar from './components/NavBar.vue';
+  import MainCard from './components/MainCard.vue'
+  import ProjectsCard from './components/ProjectsCard.vue';
+  // import MaintenancePage from './components/MaintenancePage.vue';
 
   export default {
     name: 'App',
     components: {
-      // NavBar,
-      // MainCard,
-      // ProjectsCard,
-      MaintenancePage
+      NavBar,
+      MainCard,
+      ProjectsCard,
+      // MaintenancePage
     }
   }
 </script>
