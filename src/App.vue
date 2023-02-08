@@ -1,6 +1,6 @@
 <template>
   <header>
-    <!-- <NavBar/> -->
+    <NavBar/>
   </header>
   
   <div class="main-wrapper">
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-  // import NavBar from './components/NavBar.vue';
+  import NavBar from './components/NavBar.vue';
   import MainCard from './components/MainCard.vue'
   // import ProjectsCard from './components/ProjectsCard.vue';
   // import MaintenancePage from './components/MaintenancePage.vue';
@@ -22,7 +22,7 @@
   export default {
     name: 'App',
     components: {
-      // NavBar,
+      NavBar,
       MainCard,
       // ProjectsCard,
       // MaintenancePage
@@ -44,6 +44,7 @@ body{
       display: flex;
       align-content: center;
       justify-content: center;
+      padding-bottom: 100px;
     }
 
       .main-container{

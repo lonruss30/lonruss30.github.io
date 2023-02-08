@@ -5,21 +5,27 @@
             "Job" : "Junior .NET Developer/Web Developer",
             "ContactNumber" : "09287347770",
             "Email" : "qlonruss30@gmail.com",
-            "Address" : "560 Corcuera St. Tondo, Manila"
+            "Address" : "560 Corcuera St. Tondo, Manila",
+            "About" : "Hi! Thanks for visiting my site. My name's Lon Russel, and I am a Web Developer from Manila, Philippines. I am currently working as a Junior .NET Developer, aside from that I am currently enhancing my HTML and CSS skills, and I am currently learning Vue.js. And I am eager to expand my knowledge by diving into Laravel soon. "
         }
     ],
     "ExperienceArray" : [
         {
             "Company" : "SD Solutions IT Outsourcing Inc.",
             "Role" : "Junior .NET Developer",
-            "Date" : "Aug. 2022 - Present"
+            "Date" : "August 2022 - Present"
+        },
+        {
+            "Company" : "Hytec Power Inc.",
+            "Role" : "Researcher - Internship",
+            "Date" : "August 2021"
         }
     ],
     "EducationArray" : [
         {
-            "School" : "Technological University of the Philippines - Mania",
+            "School" : "Technological University of the Philippines - Manila",
             "EducationalLevel" : "College",
-            "Course" : "Bachelor of Technical-Vocational Teacher Education major in Computer Programming",
+            "Course" : "BTVTEd major in Computer Programming",
             "Date" : "2018-2022"
         },
         {
@@ -29,9 +35,9 @@
             "Date" : "2016-2018"
         },
         {
-            "School" : "Technological University of the Philippines - Mania",
-            "EducationalLevel" : "College",
-            "Course" : "Bachelor of Technical-Vocational Teacher Education major in Computer Programming",
+            "School" : "Tondo High School",
+            "EducationalLevel" : "Junior High School",
+            "Course" : "",
             "Date" : "2018-2022"
         }
     ],
