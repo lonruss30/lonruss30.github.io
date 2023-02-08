@@ -2,14 +2,27 @@
     <div class="footer-main-wrapper">
         <div class="footer-main-container">
             <div class="container-group">
+                <div class="logo">
+                    <h2 @click="scrollTo()">lonrussel</h2>
+                </div>
                 <div v-for="items in informationData.InfoArray" v-bind:key="items" class="contact-info">
-                    <p>Contact me</p>
-                    <p>{{ items.ContactNumber }}</p>
-                    <p>{{ items.Email }}</p>
+                    <p class="title">Contact me</p>
+                    <div class="content">
+                        <p>{{ items.ContactNumber }}</p>
+                        <p>{{ items.Email }}</p>
+                    </div>
+                    
                 </div>
-                <div v-for="items in informationData.InfoArray" v-bind:key="items" class="social-info">
-                    <p>Connect with me through these socials</p>
+                <div v-for="(items, index) in informationData.InfoArray" v-bind:key="items" class="social-info">
+                    <p class="title">Socials</p>
+                    <a :href="[informationData.InfoArray[index].GithubLink]" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icon-class"></i></a>
+                    <a :href="[informationData.InfoArray[index].LinkedInLink]" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin icon-class"></i></a>
+                    <a :href="[informationData.InfoArray[index].TwitterLink]" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter icon-class"></i></a>
+                    <a :href="[informationData.InfoArray[index].FacebookLink]" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook icon-class"></i></a>     
                 </div>
+            </div>
+            <div class="copyright-shit">
+                <p>Developed by <strong>Lon Russel</strong> <i class="fa-regular fa-copyright"></i> 2023</p>
             </div>
             
         </div>
@@ -22,12 +35,17 @@ export default {
         return {
             informationData: infoData
         }
+    },
+    methods:{
+        scrollTo(){
+            window.scrollTo(0, 0);
+        }
     }
 }
 </script>
 <style scoped>
     .footer-main-wrapper{
-        height: 200px;
+        height: 250px;
         background-color: #395144;
         color: #F0EBCE;
     }
@@ -39,5 +57,59 @@ export default {
     .container-group{
         display: flex;
         justify-content: center;
+        padding: 30px 30px 0 30px;
+        text-align: left;
+    }
+    .container-group .title{
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    .logo{
+        padding-left: 120px;
+    }
+    .contact-info{
+        padding-left: 90px;
+    }
+    .logo,.contact-info,.social-info{
+        width: 30%;
+    }
+
+    .logo h2{
+        font-size: 32px;
+        margin-top: -4px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        transform: scale(1);
+    }
+
+    .logo h2:hover{
+        transform: scale(1.1);
+    }
+    .contact-info .content{
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .social-info a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .social-info .icon-class{
+        transition: all 0.5s ease-in-out;
+        transform: scale(1);
+    }
+
+    .social-info .icon-class:hover{
+        color: #AA8B56;
+        transform: scale(1.2);
+    }
+    .social-info .icon-class{
+        font-size: 28px;
+        padding: 15px 15px 0 0;
+        cursor: pointer;
+    }
+
+    .copyright-shit{
+        padding-top: 80px;
     }
 </style>
