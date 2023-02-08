@@ -101,7 +101,7 @@ export default {
 
 @media only screen and (min-width: 280px) {
     .profile-section img {
-        border-radius: 15%;
+        border-radius: 5%;
         object-fit: cover;
         object-position: 100% 0;
     }
@@ -294,6 +294,11 @@ export default {
 
 /* Ipad Mini */
 @media only screen and (min-width: 760px) {
+    .profile-section img {
+        height: 350px;
+        width: 350px;
+
+    }
 
     .container-two h4 {
         font-size: larger;
@@ -350,25 +355,35 @@ export default {
 
 /* Nest Hub */
 @media only screen and (min-width: 1000px) {
-    .profile-section img{
-        height: 450px;
-        width: 80%;
+    .about-main-container {
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .profile-section img {
+        object-position: 0 9%;
         border-radius: 5%;
     }
-    .container-one{
+
+    .container-one {
         height: initial;
     }
-    .container-two{
+
+    .container-two {
         padding-top: 20px;
+        height: initial;
     }
+
     .container-two h4 {
         font-size: x-large;
     }
-    
+
     .about-me {
         width: 100%;
         height: initial;
+        padding-bottom: 40px;
     }
+
     .about-me p {
         font-size: 20px;
     }
@@ -376,21 +391,27 @@ export default {
     .about-links {
         font-size: larger;
     }
+
     .about-main-container {
         height: 100%;
     }
+
     .flex-container {
         width: 100%;
     }
+
     .about-buttons {
         padding: 0;
         align-content: left;
         justify-content: left;
     }
-    .about-links{
+
+    .about-links {
         text-align: center;
         margin-left: 0;
     }
+
+    /* Skills Tab */
 
     .skills-tab {
         display: flex;
@@ -403,32 +424,52 @@ export default {
     .skills-content {
         /* background-color: rgba(170, 139, 86, 0.34); */
         background-color: rgba(240, 235, 206, 0.74);
-        height: 90px;
-        width: 90px;
+        height: 120px;
+        width: 120px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
     }
 
     .icon-class {
         color: #395144;
-        font-size: 36px;
-        padding: 15px 0 0 0;
+        font-size: 40px;
+        padding: 20px 0 0 0;
     }
 
     .skills-content p {
-        margin: 10px 0;
-        font-size: 12px;
+        margin: 15px 0;
+        font-size: 16px;
     }
 
     /* Experiences Tab */
-    .experiences-tab {
-        width: 80%;
-        display: inline-block;
+    .experiences-content {
+        height: 120px;
+        font-size: 16px;
+        padding: 20px 0 5px 15px;
     }
-    .education-tab{
-        display: inline-block;
-        width: 80%;
+
+    .experiences-content p {
+        font-size: 16px;
     }
-    
+
+    /* Education Tab */
+    .education-content {
+        height: 120px;
+        font-size: 16px;
+        padding: 20px 10px 10px 15px;
+    }
+
+    .education-content p {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (min-width: 1150px) {
+    .profile-section img {
+        object-fit: cover;
+        object-position: 0 9%;
+        border-radius: 5%;
+    }
 }
 </style>
