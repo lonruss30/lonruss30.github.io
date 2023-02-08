@@ -29,7 +29,7 @@
                             class="experiences-content">
                             <strong>{{ items.Company }}</strong>
                             <p>{{ items.Date }}</p>
-                            <p><strong>Role:</strong> {{ items.Role }}</p>
+                            <p>{{ items.Role }}</p>
                         </div>
                     </div>
                     <div v-if="tabName == 'education'" class="education-tab">
@@ -208,7 +208,6 @@ export default {
 }
 
 .experiences-content p {
-    margin: 5px 0;
     font-size: 10px;
 }
 
@@ -276,7 +275,6 @@ export default {
     }
 
     .experiences-content p {
-        margin: 5px 0;
         font-size: 14px;
     }
 
@@ -337,7 +335,6 @@ export default {
     }
 
     .experiences-content p {
-        margin: 5px 0;
         font-size: 14px;
     }
 

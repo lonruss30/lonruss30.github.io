@@ -6,7 +6,11 @@
             "ContactNumber" : "09287347770",
             "Email" : "qlonruss30@gmail.com",
             "Address" : "560 Corcuera St. Tondo, Manila",
-            "About" : "Hi! Thanks for visiting my site. My name's Lon Russel, and I am a Web Developer from Manila, Philippines. I am currently working as a Junior .NET Developer, aside from that I am currently enhancing my HTML and CSS skills, and I am currently learning Vue.js. And I am eager to expand my knowledge by diving into Laravel soon. "
+            "About" : "Hi! Thanks for visiting my site. My name's Lon Russel, and I am a Web Developer from Manila, Philippines. I am currently working as a Junior .NET Developer, aside from that I am currently enhancing my HTML and CSS skills, and I am currently learning Vue.js. And I am eager to expand my knowledge by diving into Laravel soon. ",
+            "GithubLink" : "https://github.com/lonruss30",
+            "LinkedInLink" : "https://www.linkedin.com/in/lonrusselquinto/",
+            "TwitterLink" : "https://twitter.com/00LONIE",
+            "FacebookLink" : "https://www.facebook.com/lonruss30/"
         }
     ],
     "ExperienceArray" : [

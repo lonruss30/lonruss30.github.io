@@ -9,6 +9,10 @@
       <!-- <ProjectsCard/> -->
     </div>
   </div>
+
+  <footer>
+    <FooterCard/>
+  </footer>
   
   <!-- <MaintenancePage/> -->
 </template>
@@ -16,6 +20,7 @@
 <script>
   import NavBar from './components/NavBar.vue';
   import MainCard from './components/MainCard.vue'
+  import FooterCard from './components/FooterCard.vue';
   // import ProjectsCard from './components/ProjectsCard.vue';
   // import MaintenancePage from './components/MaintenancePage.vue';
 
@@ -24,6 +29,7 @@
     components: {
       NavBar,
       MainCard,
+      FooterCard
       // ProjectsCard,
       // MaintenancePage
     }
@@ -44,7 +50,7 @@ body{
       display: flex;
       align-content: center;
       justify-content: center;
-      padding-bottom: 100px;
+      padding-bottom: 200px;
     }
 
       .main-container{
