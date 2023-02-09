@@ -111,6 +111,7 @@ export default {
     .resume-div a{
         color: inherit;
         text-decoration: underline;
+        
     }
     .social-info a{
         text-decoration: none;
