@@ -8,9 +8,15 @@
                 <div v-for="items in informationData.InfoArray" v-bind:key="items" class="contact-info">
                     <p class="title">Contact me</p>
                     <div class="content">
-                        <p>{{ items.ContactNumber }}</p>
-                        <p>{{ items.Email }}</p>
+                        <p><i class="fa-solid fa-phone-volume icon-class"></i>{{ items.ContactNumber }}</p>
+                        <p><i class="fa-solid fa-inbox icon-class"></i>{{ items.Email }}</p>
                     </div>
+                    <div class="resume-div">
+                        <p class="title">Resume</p>
+                        <a href="../../public/LonRusselQuintoResume2023.pdf" download target="_blank"><i class="fa-solid fa-paperclip icon-class"></i>My Resume</a>
+                    </div>
+                    
+                    
                     
                 </div>
                 <div v-for="(items, index) in informationData.InfoArray" v-bind:key="items" class="social-info">
@@ -45,7 +51,7 @@ export default {
 </script>
 <style scoped>
     .footer-main-wrapper{
-        height: 250px;
+        height: 350px;
         background-color: #395144;
         color: #F0EBCE;
     }
@@ -55,6 +61,7 @@ export default {
     }
 
     .container-group{
+        height: 70%;
         display: flex;
         justify-content: center;
         padding: 30px 30px 0 30px;
@@ -77,7 +84,7 @@ export default {
 
     .logo h2{
         font-size: 32px;
-        margin-top: -4px;
+        margin-top: -12px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
         transform: scale(1);
@@ -88,7 +95,21 @@ export default {
     }
     .contact-info .content{
         padding-top: 15px;
+        padding-bottom: 15px;
         font-size: 16px;
+    }
+
+    .contact-info .content .icon-class {
+        padding-right: 10px;
+    }
+
+    .contact-info .resume-div .icon-class{
+        padding-right: 10px;
+    }
+
+    .resume-div a{
+        color: inherit;
+        text-decoration: underline;
     }
     .social-info a{
         text-decoration: none;
@@ -110,6 +131,7 @@ export default {
     }
 
     .copyright-shit{
-        padding-top: 80px;
+        height: 30%;
+        padding-top: 50px;
     }
 </style>
