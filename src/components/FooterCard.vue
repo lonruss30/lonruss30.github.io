@@ -104,12 +104,14 @@ export default {
     }
 
     .contact-info .resume-div .icon-class{
+        padding-top: 15px;
         padding-right: 10px;
     }
 
     .resume-div a{
         color: inherit;
         text-decoration: underline;
+        
     }
     .social-info a{
         text-decoration: none;
