@@ -63,10 +63,6 @@
             "Icon" : "fa-brands fa-vuejs icon-class"
         },
         {
-            "Title" : "Angular",
-            "Icon" : "fa-brands fa-angular icon-class"
-        },
-        {
             "Title" : "Bootstrap",
             "Icon" : "fab fa-bootstrap icon-class"
         },
