@@ -13,7 +13,7 @@
                     </div>
                     <div class="resume-div">
                         <p class="title">Resume</p>
-                        <a href="../../public/LonRusselQuintoResume2023.pdf" download target="_blank"><i class="fa-solid fa-paperclip icon-class"></i>My Resume</a>
+                        <a href="./LonRusselQuintoResume2023.pdf" download target="_blank"><i class="fa-solid fa-paperclip icon-class"></i>My Resume</a>
                     </div>
                     
                     
