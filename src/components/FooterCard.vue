@@ -75,7 +75,7 @@ export default {
     height: 100%;
 }
 
-.logo{
+.logo h2{
     cursor: pointer;
 }
 
