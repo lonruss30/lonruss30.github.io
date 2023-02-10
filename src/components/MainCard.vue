@@ -293,8 +293,8 @@ export default {
 /* Ipad Mini */
 @media only screen and (min-width: 760px) {
     .profile-section img {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
 
     }
 

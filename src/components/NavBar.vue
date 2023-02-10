@@ -29,49 +29,72 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
     align-content: center;
     height: 5.5rem;
     width: 100%;
 }
 
 .name-logo {
-    padding-left: 40px;
     font-family: 'Poppins', sans-serif;
-    font-size: small;
 }
 
+.nav-buttons a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-@media only screen and (min-width: 1000px) {
+@media screen and (min-width: 334px) {
     .navbar-main-container {
-        font-family: 'Poppins', sans-serif;
-        padding-top: 50px;
-        padding-bottom: 20px;
-        align-content: center;
-        height: 5.5rem;
-        width: 100%;
+        padding: 10px 40px 10px 40px;
     }
 
     .name-logo {
-        padding-left: 150px;
-        font-size: larger;
+        font-size: 18px;
     }
 
-    .nav-buttons {
-        padding-right: 150px;
-    }
-
-    .icon-class {
-        margin-right: 10px;
-    }
-
-    .nav-buttons a {
-        color: inherit;
-        text-decoration: none;
+    .nav-buttons{
         font-size: 24px;
-        padding-right: 5px;
-        cursor: pointer;
+    }
+
+    .nav-buttons a{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .navbar-main-container {
+        padding: 10px 80px 10px 80px;
+    }
+
+    .name-logo {
+        font-size: 18px;
+    }
+
+    .nav-buttons{
+        font-size: 26px;
+    }
+
+    .nav-buttons a{
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1095px) {
+    .navbar-main-container {
+        padding: 10px 150px 10px 150px;
+    }
+
+    .name-logo {
+        font-size: 18px;
+    }
+
+    .nav-buttons{
+        font-size: 26px;
+    }
+
+    .nav-buttons a{
+        padding-left: 15px;
     }
 }
 </style>
