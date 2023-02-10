@@ -18,7 +18,7 @@
                             <p class="title">Resume</p>
                             <div class="content-a">
                                 <a href="./LonRusselQuintoResume2023.pdf" download target="_blank"><i
-                                        class="fa-solid fa-paperclip icon-class"></i>My Resume</a>
+                                        class="fa-solid fa-paperclip icon-class"></i>Download my Resume</a>
                             </div>
 
                         </div>
@@ -75,6 +75,10 @@ export default {
     height: 100%;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .middle-group {
     margin: 0 5%;
 }
@@ -85,6 +89,12 @@ export default {
 
 .social-info {
     margin: 0 5%;
+}
+
+.social-info a:hover .icon-class{
+    color: #AA8B56;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
 }
 
 .contact-info,
