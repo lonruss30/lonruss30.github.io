@@ -16,10 +16,10 @@
                         </div>
                         <div class="resume-div">
                             <p class="title">Resume</p>
-                            <!-- <div class="content-a">
+                            <div class="content-a">
                                 <a href="./LonRusselQuintoResume2023.pdf" download target="_blank"><i
-                                        class="fa-solid fa-paperclip icon-class"></i>My CV</a>
-                            </div> -->
+                                        class="fa-solid fa-paperclip icon-class"></i>My Resume</a>
+                            </div>
 
                         </div>
                     </div>
